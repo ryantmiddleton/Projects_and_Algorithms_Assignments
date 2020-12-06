@@ -57,6 +57,12 @@ class Node{
         return false;
     }
 
+    length() {
+        var count = 0;
+        for(i=this.head;i != null;i=i.next, count++);
+        return count;
+    }
+
     printList(){
         for(i=this.head;i !=null; i=i.next)
             console.log(i.value);
@@ -64,16 +70,17 @@ class Node{
  } //End of SLL class
 
 //  Test/Debug
-var newSLL = new SLL();
-newSLL.addFront(1);
+// var newSLL = new SLL();
+// newSLL.addFront(1);
 
- for(i=2;i<=10;i++){
-     newSLL.addFront(i);
- }
+//  for(i=2;i<=10;i++){
+//      newSLL.addFront(i);
+//  }
 
-newSLL.printList();
-console.log(newSLL.front());
-newSLL.removeFront();
-console.log(newSLL.front());
-console.log(newSLL.contains(5));
+// newSLL.printList();
+// // console.log(newSLL.front());
+// // newSLL.removeFront();
+// // console.log(newSLL.front());
+// // console.log(newSLL.contains(5));
+// console.log(newSLL.length());
 
