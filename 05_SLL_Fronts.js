@@ -63,9 +63,11 @@ class Node{
         return count;
     }
 
-    printList(){
+    display(){
+        var strList="";
         for(i=this.head;i !=null; i=i.next)
-            console.log(i.value);
+            strList = strList + i.value + "--> ";
+        console.log(strList);
     }
  } //End of SLL class
 
@@ -77,10 +79,10 @@ class Node{
 //      newSLL.addFront(i);
 //  }
 
-// newSLL.printList();
-// // console.log(newSLL.front());
-// // newSLL.removeFront();
-// // console.log(newSLL.front());
-// // console.log(newSLL.contains(5));
+// newSLL.display();
+// console.log(newSLL.front());
+// newSLL.removeFront();
+// console.log(newSLL.front());
+// console.log(newSLL.contains(5));
 // console.log(newSLL.length());
 
