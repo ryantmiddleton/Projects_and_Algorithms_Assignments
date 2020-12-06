@@ -26,8 +26,8 @@ class Node{
 // list head node. If the list is empty, return null.
 
     removeFront() {
-        if(this.next == NULL)
-            return NULL;
+        if(this.head == null)
+            return null;
         else{
             this.head = this.head.next;
             return this.head;
@@ -38,8 +38,8 @@ class Node{
 // head of the list. If the list is empty, return null.
 
     front() {
-        if(this.head == NULL)
-            return NULL;
+        if(this.head == null)
+            return null;
         else
             return this.head.value;
     }
@@ -64,12 +64,16 @@ class Node{
  } //End of SLL class
 
 //  Test/Debug
-// var newSLL = new SLL();
-// newSLL.addFront(1);
+var newSLL = new SLL();
+newSLL.addFront(1);
 
-//  for(i=2;i<=10;i++){
-//      newSLL.addFront(i);
-//  }
+ for(i=2;i<=10;i++){
+     newSLL.addFront(i);
+ }
 
-// console.log(newSLL.contains(5));
+newSLL.printList();
+console.log(newSLL.front());
+newSLL.removeFront();
+console.log(newSLL.front());
+console.log(newSLL.contains(5));
 
