@@ -63,12 +63,13 @@ class Node{
     }
  } //End of SLL class
 
-var newSLL = new SLL();
-newSLL.addFront(1);
+//  Test/Debug
+// var newSLL = new SLL();
+// newSLL.addFront(1);
 
- for(i=2;i<=10;i++){
-     newSLL.addFront(i);
- }
+//  for(i=2;i<=10;i++){
+//      newSLL.addFront(i);
+//  }
 
-console.log(newSLL.contains(5));
+// console.log(newSLL.contains(5));
 
