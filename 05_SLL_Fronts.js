@@ -69,6 +69,47 @@ class Node{
             strList = strList + i.value + "--> ";
         console.log(strList);
     }
+
+    // Create method max() to return list’s largest val.
+
+    max(){
+        if (this.head == null)
+            return null;
+
+        var max = this.head.value;
+        for(i=this.head;i !=null; i=i.next){
+            if(i.value > max)
+                max = i.value;
+        }
+        return max;
+    }
+
+    // Create min() to return list’s smallest val.
+
+    min(){
+        if (this.head == null)
+            return null;
+
+        var min = this.head.value;
+        for(i=this.head;i !=null; i=i.next){
+            if(i.value < min)
+                min = i.value;
+        }
+        return min;
+    }
+
+    // Create average() to return average val.
+
+    average(){
+        if (this.head == null)
+            return null;
+
+        var sum = 0;
+        for(i=this.head;i !=null; i=i.next)
+            sum += i.value;
+        return sum/this.length();
+    }
+
  } //End of SLL class
 
 //  Test/Debug
@@ -85,4 +126,7 @@ class Node{
 // console.log(newSLL.front());
 // console.log(newSLL.contains(5));
 // console.log(newSLL.length());
+// console.log(newSLL.min());
+// console.log(newSLL.max());
+// console.log(newSLL.average());
 
