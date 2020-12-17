@@ -57,6 +57,7 @@ function GCF(num1, num2){
 }
 
 console.log (rGCF(21, 14));
+
 // Bonus Challenges (Optional)
 // Tarai
 // The Tarai (Japanese: “to pass around”) function was created to 
